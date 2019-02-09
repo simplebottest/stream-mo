@@ -5,12 +5,11 @@ const client = new Discord.Client();
 
 client.on('ready',  () => {
   console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'); 
-  console.log('by safa7');
+  console.log('by ');
   console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~');
   console.log(`Logged in as  * [ " ${client.user.username} " ] servers! [ " ${client.guilds.size} " ]`);
   console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~');
   console.log('is online')
-client.user.setStatus("dnd");
 });
 
 
@@ -19,7 +18,7 @@ client.user.setStatus("dnd");
 
 
 const devs = ["518113780723351592"];
-const adminprefix = ["N"];
+const adminprefix = ["#"];
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!devs.includes(message.author.id)) return;
